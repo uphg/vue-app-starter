@@ -37,6 +37,9 @@ devDependencies:
   '@types/node':
     specifier: ^18.18.5
     version: 18.18.8
+  '@unocss/postcss':
+    specifier: ^0.57.1
+    version: 0.57.1(postcss@8.4.31)
   '@unocss/preset-attributify':
     specifier: ^0.57.1
     version: 0.57.1
