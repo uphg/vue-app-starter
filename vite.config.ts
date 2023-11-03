@@ -36,12 +36,11 @@ export default defineConfig({
     }),
     Components({
       dts: 'src/components.d.ts',
-      // 自动导入组件的目录
       dirs: ['src/components'],
-      // 自动导入支持的后缀类型
+      // file suffixes
       extensions: ['vue', 'tsx'],
       resolvers: [NaiveUiResolver()],
-      // 可使用自动导入的文件后缀类型
+      // resolvable file suffixes
       include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/],
     }),
     UnoCSS(),
