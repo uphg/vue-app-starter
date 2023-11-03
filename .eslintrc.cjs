@@ -14,6 +14,9 @@ module.exports = {
   },
   rules: {
     'no-undef': 'off',
+    'quotes': [2, 'single'],
+    'semi': ['warn', 'never'],
+
     'vue/multi-word-component-names': 'off',
   }
 }
