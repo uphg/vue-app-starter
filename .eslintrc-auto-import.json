@@ -218,6 +218,10 @@
     "NUploadFileList": true,
     "NUploadTrigger": true,
     "NWatermark": true,
-    "NxButton": true
+    "NxButton": true,
+    "$message": true,
+    "HTTPClient": true,
+    "http": true,
+    "loadMessage": true
   }
 }

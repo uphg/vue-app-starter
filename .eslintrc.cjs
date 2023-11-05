@@ -16,6 +16,7 @@ module.exports = {
     'no-undef': 'off',
     'quotes': [2, 'single'],
     'semi': ['warn', 'never'],
+    '@typescript-eslint/no-unused-vars': 'off',
 
     'vue/multi-word-component-names': 'off',
   }

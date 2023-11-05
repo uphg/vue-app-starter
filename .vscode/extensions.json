@@ -4,7 +4,7 @@
     "Vue.vscode-typescript-vue-plugin",
     "dbaeumer.vscode-eslint",
     "antfu.unocss",
-    "antfu.vite",
+    // "antfu.vite",
     "csstools.postcss",
   ]
 }

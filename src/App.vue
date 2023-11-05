@@ -1,6 +1,17 @@
 <template>
-  <RouterView />
+  <n-spin :show="$loading.visible">
+    <RouterView />
+    <template v-if="$loading.message" #description>
+      {{ $loading.message }}
+    </template>
+  </n-spin>
 </template>
+
+<script setup lang="ts">
+const { $loading } = useGlobalLoading()
+
+loadGlobalMessage()
+</script>
 
 <style scoped>
 header {
