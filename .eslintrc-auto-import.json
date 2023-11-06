@@ -222,6 +222,11 @@
     "$message": true,
     "HTTPClient": true,
     "http": true,
-    "loadMessage": true
+    "loadMessage": true,
+    "$loading": true,
+    "Loading": true,
+    "loadGlobalMessage": true,
+    "useGlobalLoading": true,
+    "useGlobalMessage": true
   }
 }
