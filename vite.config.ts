@@ -7,6 +7,7 @@ import Components from 'unplugin-vue-components/vite'
 import UnoCSS from 'unocss/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import * as NativeUI from 'naive-ui'
+import { svgstore } from './plugins/svgstore'
 
 const naiveUIComponentNames = getNaiveUIComponentNames()
 
@@ -44,16 +45,17 @@ export default defineConfig({
       include: [/\.[tj]sx?$/, /\.vue$/, /\.vue\?vue/],
     }),
     UnoCSS(),
+    svgstore()
   ],
   build: {
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules/naive-ui')) {
-            return 'naive-ui';
+            return 'naive-ui'
           }
           if (id.includes('node_modules')) {
-            return 'vendor';
+            return 'vendor'
           }
         }
       }

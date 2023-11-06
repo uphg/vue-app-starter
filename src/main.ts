@@ -1,5 +1,6 @@
 import 'virtual:uno.css'
-import './assets/main.scss'
+import '@svgstore'
+import './styles/main.scss'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
