@@ -7,6 +7,11 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    HelloWorld: typeof import('./components/HelloWorld.tsx')['default']
+    Loading: typeof import('./components/Loading.tsx')['default']
+    NButton: typeof import('naive-ui')['NButton']
+    NMessageProvider: typeof import('naive-ui')['NMessageProvider']
+    NSpin: typeof import('naive-ui')['NSpin']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

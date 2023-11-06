@@ -1,6 +1,9 @@
 const HelloWorld = defineComponent({
   name: 'HelloWorld',
-  setup() {
+  props: {
+    name: String
+  },
+  setup(props) {
     const a = ref(0)
 
     const onClick = throttle(() => {
@@ -10,7 +13,7 @@ const HelloWorld = defineComponent({
 
     return () => (
       <div>
-        <h2 c-blue-500 font-size-6>Hello!</h2>
+        <h2 c-blue-500 font-size-6>Hello!{props.name}</h2>
         <div>
           <NButton onClick={onClick}>点我</NButton>
         </div>

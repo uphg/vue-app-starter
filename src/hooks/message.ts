@@ -8,5 +8,7 @@ export function useGlobalMessage() {
 } 
 
 export function loadGlobalMessage() {
-  $message = useMessage()
+  onScopeDispose(() => {
+    $message = useMessage()
+  })
 }
