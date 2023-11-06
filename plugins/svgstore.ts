@@ -1,5 +1,6 @@
 import path from 'path'
 import fs from 'fs'
+//@ts-ignore
 import store from 'svgstore' // 用于制作 SVG Sprites
 import { optimize } from 'svgo' // 用于优化 SVG 文件
 
@@ -10,7 +11,6 @@ type Options = {
 
 export const svgstore = (options?: Options) => {
   const inputFolder = options?.inputFolder || 'src/assets/icons'
-  console.log('运行插件')
   return {
     name: 'svgstore',
     resolveId(id: string) {
