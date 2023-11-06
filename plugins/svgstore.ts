@@ -9,17 +9,19 @@ type Options = {
   inline: string
 }
 
+const virtualModuleId = 'virtual:svgstore'
+
 export const svgstore = (options?: Options) => {
   const inputFolder = options?.inputFolder || 'src/assets/icons'
   return {
     name: 'svgstore',
     resolveId(id: string) {
-      if (id === '@svgstore') {
-        return 'svg_bundle.js'
+      if (id === virtualModuleId) {
+        return virtualModuleId
       }
     },
     load(id: string) {
-      if (id === 'svg_bundle.js') {
+      if (id === virtualModuleId) {
         const sprites = store(options)
         const iconsDir = path.resolve(inputFolder)
         for (const file of fs.readdirSync(iconsDir)) {

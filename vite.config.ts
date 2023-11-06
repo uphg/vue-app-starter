@@ -7,6 +7,7 @@ import Components from 'unplugin-vue-components/vite'
 import UnoCSS from 'unocss/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import * as NativeUI from 'naive-ui'
+//@ts-ignore
 import { svgstore } from './plugins/svgstore'
 
 const naiveUIComponentNames = getNaiveUIComponentNames()

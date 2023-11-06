@@ -1,5 +1,5 @@
 import 'virtual:uno.css'
-import '@svgstore'
+import 'virtual:svgstore'
 import './styles/main.scss'
 
 import { createApp } from 'vue'
