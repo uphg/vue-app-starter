@@ -1,6 +1,6 @@
 <template>
   <div class="c-blue">
-    <svg class="w-1.2em h-1.2em" bg-blue>
+    <svg class="w-1.2em h-1.2em">
       <use :xlink:href="`#${name}`"></use>
     </svg>
   </div>

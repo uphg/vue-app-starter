@@ -19,6 +19,20 @@ function getNaiveUIComponentNames() {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/naive-ui')) {
+            return 'naive-ui'
+          }
+          if (id.includes('node_modules')) {
+            return 'vendor'
+          }
+        }
+      }
+    }
+  },
   plugins: [
     vue(),
     vueJsx(),
@@ -48,20 +62,6 @@ export default defineConfig({
     UnoCSS(),
     svgstore()
   ],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules/naive-ui')) {
-            return 'naive-ui'
-          }
-          if (id.includes('node_modules')) {
-            return 'vendor'
-          }
-        }
-      }
-    }
-  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
