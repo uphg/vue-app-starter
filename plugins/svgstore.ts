@@ -1,8 +1,8 @@
 import path from 'path'
 import fs from 'fs'
 //@ts-ignore
-import store from 'svgstore' // 用于制作 SVG Sprites
-import { optimize } from 'svgo' // 用于优化 SVG 文件
+import store from 'svgstore' // 制作 SVG Sprites
+import { optimize } from 'svgo' // 优化 SVG 文件
 
 type Options = {
   inputFolder: string,
