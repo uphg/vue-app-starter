@@ -83,8 +83,7 @@ http.instance.interceptors.response.use(
   }
 )
 
-http.instance.interceptors.response.use(response=>{
-  console.log('response')
+http.instance.interceptors.response.use(response => {
   return response
 }, (error) => {
   if (error.response) {
@@ -95,5 +94,3 @@ http.instance.interceptors.response.use(response=>{
   }
   throw error
 })
-
-

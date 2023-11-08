@@ -171,6 +171,7 @@ declare global {
   const isReadonly: typeof import('vue')['isReadonly']
   const isRef: typeof import('vue')['isRef']
   const loadGlobalMessage: typeof import('./hooks/message')['loadGlobalMessage']
+  const loadLoading: typeof import('./hooks/loading')['loadLoading']
   const markRaw: typeof import('vue')['markRaw']
   const nextTick: typeof import('vue')['nextTick']
   const onActivated: typeof import('vue')['onActivated']

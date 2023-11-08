@@ -227,6 +227,7 @@
     "Loading": true,
     "loadGlobalMessage": true,
     "useGlobalLoading": true,
-    "useGlobalMessage": true
+    "useGlobalMessage": true,
+    "loadLoading": true
   }
 }
