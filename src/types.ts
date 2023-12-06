@@ -19,6 +19,4 @@ export type User = {
   email: string
 }
 
-export type Mock<T extends unknown = unknown> = (config: AxiosRequestConfig) => [number, T]
-
 export type JSONValue = string | number | null | boolean | JSONValue[] | { [key: string]: JSONValue }

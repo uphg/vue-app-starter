@@ -1,7 +1,6 @@
 import { $loading } from '@/hooks/loading'
 import type { JSONValue } from '@/types'
 import axios, { AxiosError, type AxiosInstance, type AxiosRequestConfig } from 'axios'
-import { mock } from '../mock/mock'
 
 type GetConfig = Omit<AxiosRequestConfig, 'params' | 'url' | 'method'>
 type PostConfig = Omit<AxiosRequestConfig, 'url' | 'data' | 'method'>
@@ -36,7 +35,6 @@ export const http = new HTTPClient('/api/v1')
 
 http.instance.interceptors.request.use((config) => {
   const jwt = localStorage.getItem('jwt')
-  console.log(0)
   if (jwt) {
     config.headers!.Authorization = `Bearer ${jwt}`
   }
@@ -59,27 +57,6 @@ http.instance.interceptors.response.use(
       $loading?.close()
     }
     throw error
-  }
-)
-
-// See: https://vitejs.dev/config/build-options.html#build-commonjsoptions
-/* #__PURE__ */
-http.instance.interceptors.response.use(
-  (response) => {
-    mock(response)
-    if (response.status >= 400) {
-      throw { response }
-    } else {
-      return response
-    }
-  },
-  (error) => {
-    mock(error.response)
-    if (error.response.status >= 400) {
-      throw error
-    } else {
-      return error.response
-    }
   }
 )
 
