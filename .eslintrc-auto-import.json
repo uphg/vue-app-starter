@@ -228,6 +228,9 @@
     "loadGlobalMessage": true,
     "useGlobalLoading": true,
     "useGlobalMessage": true,
-    "loadLoading": true
+    "loadLoading": true,
+    "NQrCode": true,
+    "NSplit": true,
+    "NVirtualList": true
   }
 }

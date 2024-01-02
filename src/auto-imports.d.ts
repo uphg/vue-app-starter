@@ -110,6 +110,7 @@ declare global {
   const NPopover: typeof import('naive-ui')['NPopover']
   const NPopselect: typeof import('naive-ui')['NPopselect']
   const NProgress: typeof import('naive-ui')['NProgress']
+  const NQrCode: typeof import('naive-ui')['NQrCode']
   const NRadio: typeof import('naive-ui')['NRadio']
   const NRadioButton: typeof import('naive-ui')['NRadioButton']
   const NRadioGroup: typeof import('naive-ui')['NRadioGroup']
@@ -122,6 +123,7 @@ declare global {
   const NSlider: typeof import('naive-ui')['NSlider']
   const NSpace: typeof import('naive-ui')['NSpace']
   const NSpin: typeof import('naive-ui')['NSpin']
+  const NSplit: typeof import('naive-ui')['NSplit']
   const NStatistic: typeof import('naive-ui')['NStatistic']
   const NStep: typeof import('naive-ui')['NStep']
   const NSteps: typeof import('naive-ui')['NSteps']
@@ -152,6 +154,7 @@ declare global {
   const NUploadDragger: typeof import('naive-ui')['NUploadDragger']
   const NUploadFileList: typeof import('naive-ui')['NUploadFileList']
   const NUploadTrigger: typeof import('naive-ui')['NUploadTrigger']
+  const NVirtualList: typeof import('naive-ui')['NVirtualList']
   const NWatermark: typeof import('naive-ui')['NWatermark']
   const NxButton: typeof import('naive-ui')['NxButton']
   const computed: typeof import('vue')['computed']
@@ -227,4 +230,5 @@ declare global {
 declare global {
   // @ts-ignore
   export type { Component, ComponentPublicInstance, ComputedRef, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, VNode, WritableComputedRef } from 'vue'
+  import('vue')
 }
