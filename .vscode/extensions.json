@@ -3,7 +3,7 @@
     "Vue.volar",
     "Vue.vscode-typescript-vue-plugin",
     "dbaeumer.vscode-eslint",
-    "antfu.unocss",
-    "csstools.postcss",
+    "esbenp.prettier-vscode",
+    "antfu.file-nesting"
   ]
 }

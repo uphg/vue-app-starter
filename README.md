@@ -1,39 +1,52 @@
-# Vue App Starter
+# vue-project-1
 
-快速创建单页应用 APP 模板。
+This template should help get you started developing with Vue 3 in Vite.
 
-## 特性
+## Recommended IDE Setup
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 3](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild)
-- 🧩 [组件自动化加载](./src/components)
-- 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-- 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
-- ✅ 使用 [Vitest](http://vitest.dev/) 进行单元和组件测试
-- 🦾 TypeScript
-- 🎲 封装 Mock 方法，方便开发环境 Mock 数据
-- 📦 根据路由/依赖库分包打包生产环境
-<!-- - 😃 [各种图标集为你所用](https://github.com/antfu/unocss/tree/main/packages/preset-icons) -->
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## 预设
+## Type Support for `.vue` Imports in TS
 
-### CSS 框架
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-- [Sass](https://sass-lang.com/)
-- [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-### 插件
+1. Disable the built-in TypeScript Extension
+    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-- [Vue Router](https://github.com/vuejs/vue-router)
-- [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
-- [VueUse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
+## Customize configuration
 
-## 开启 Volar 接管模式（仅针对 VSCode + Volar）
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-Volar 接管模式的 TypeScript 类型提示性能更高，通过以下步骤启用：
+## Project Setup
 
-1. 在当前项目的工作空间下，用 `Ctrl + Shift + P` (macOS：`Cmd + Shift + P`) 唤起命令面板。
-2. 输入 `built`，然后选择“Extensions：Show Built-in Extensions”。
-3. 在插件搜索框内输入 `typescript` (不要删除 `@builtin` 前缀)。
-4. 点击“TypeScript and JavaScript Language Features”右下角的小齿轮，然后选择“Disable (Workspace)”。
-5. 重新加载工作空间。Takeover 模式将会在你打开一个 Vue 或者 TS 文件时自动启用。
+```sh
+pnpm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+pnpm dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+pnpm build
+```
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+pnpm test:unit
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+pnpm lint
+```

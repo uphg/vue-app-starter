@@ -13,10 +13,7 @@ const HelloWorld = defineComponent({
 
     return () => (
       <div>
-        <h2>Hello!{props.name}</h2>
-        <div>
-          <NButton onClick={onClick}>点我</NButton>
-        </div>
+        <h2 class="c-blue-600">Hello!{props.name}</h2>
       </div>
     )
   }
